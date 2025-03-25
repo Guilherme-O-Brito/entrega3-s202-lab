@@ -3,6 +3,7 @@ from pokedex import Pokedex
 
 if __name__ == '__main__':
     db = Database(database='pokedex', collection='pokemons')
+    #db.resetDatabase()
     pokedex = Pokedex(db)
 
     pokemons = pokedex.search_by_name('Charmander')
